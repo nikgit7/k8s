@@ -22,12 +22,4 @@ It's important to note that Deployment objects are used to manage stateless appl
 
 In Kubernetes, Deployments don't manage Pods directly. That's the job of the ReplicaSet object. When you create a Deployment in Kubernetes, a ReplicaSet is created automatically. The ReplicaSet ensures that the desired number of replicas (copies) are running at all times by creating or deleting Pods as needed.
 
-**PERSISTENT VOLUME AND PERSISTENT VOLUME CLAIM**
-
-PVs are volume plugins like Volumes, but have a lifecycle independent of any individual Pod that uses the PV. This API object captures the details of the implementation of the storage, be that NFS, iSCSI, or a cloud-provider-specific storage system. A PersistentVolumeClaim (PVC) is a request for storage by a user.
-
-**NETWORK POLICIES**
-
-Network policies are Kubernetes resources that control the traffic between pods and/or network endpoints. They uses labels to select pods and specify the traffic that is directed toward those pods using rules. Most CNI plugins support the implementation of network policies, however, if they don’t and we create a NetworkPolicy, then that resource will be ignored.
-
 
