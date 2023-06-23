@@ -1,5 +1,5 @@
 **PERSISTENT VOLUME AND PERSISTENT VOLUME CLAIM**
-
+ 
 PVs are volume plugins like Volumes, but have a lifecycle independent of any individual Pod that uses the PV. This API object captures the details of the implementation of the storage, be that NFS, iSCSI, or a cloud-provider-specific storage system. A PersistentVolumeClaim (PVC) is a request for storage by a user.
 
 **NETWORK POLICIES**
