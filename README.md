@@ -1,2 +1,3 @@
-# k8s
-this is kubernetes
+# Kubernetes Repository
+
+This repository contains code, configurations, and documentation for a Kubernetes project.
