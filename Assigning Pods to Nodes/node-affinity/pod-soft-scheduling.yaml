@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+  affinity:
+    nodeAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+        - preference:
+            matchExpressions:
+              - key: beta.kubernetes.io/instance-type
+                operator: In
+                values:
+                  - t3.medium
+        - preference:
+            matchExpressions:
+              - key: beta.kubernetes.io/instance-type
+                operator: In
+                values:
+                  - t3.large
