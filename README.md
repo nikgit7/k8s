@@ -1,3 +1,3 @@
 # Kubernetes Repository
 
-This repository contains code, configurations, and documentation for a Kubernetes project.
+This repository contains code, configurations, and documentation for my Kubernetes projects.
