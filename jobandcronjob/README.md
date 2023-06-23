@@ -4,6 +4,6 @@ A Job creates one or more Pods and will continue to retry execution of the Pods 
 
 # Cronjob in k8s
 
-A CronJob creates Jobs on a repeating schedule.
+A CronJob creates Jobs on a repeating schedule. 
 
 CronJob is meant for performing regular scheduled actions such as backups, report generation, and so on. One CronJob object is like one line of a crontab (cron table) file on a Unix system. It runs a job periodically on a given schedule, written in Cron format.
